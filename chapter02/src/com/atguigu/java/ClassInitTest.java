@@ -7,6 +7,9 @@ package com.atguigu.java;
 public class ClassInitTest {
    private static int num = 1;
 
+    /**
+     * 静态代码块
+     */
    static{
        num = 2;
        number = 20;

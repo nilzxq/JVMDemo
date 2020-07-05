@@ -2,6 +2,7 @@ package com.atguigu.java1;
 
 
 import sun.security.ec.CurveDB;
+import sun.security.ssl.Debug;
 
 import java.net.URL;
 import java.security.Provider;
@@ -19,8 +20,8 @@ public class ClassLoaderTest1 {
             System.out.println(element.toExternalForm());
         }
         //从上面的路径中随意选择一个类,来看看他的类加载器是什么:引导类加载器
-        ClassLoader classLoader = Provider.class.getClassLoader();
-        System.out.println(classLoader);
+        ClassLoader classLoader = Debug.class.getClassLoader();
+        System.out.println(classLoader);//null
 
         System.out.println("***********扩展类加载器*************");
         String extDirs = System.getProperty("java.ext.dirs");
