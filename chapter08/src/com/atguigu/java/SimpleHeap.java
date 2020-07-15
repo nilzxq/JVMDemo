@@ -2,6 +2,7 @@ package com.atguigu.java;
 
 /**
  * @author shkstart  shkstart@126.com
+ * -XX:+PrintGCDetails
  * @create 2020  17:28
  */
 public class SimpleHeap {

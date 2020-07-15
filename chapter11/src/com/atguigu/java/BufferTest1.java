@@ -12,16 +12,16 @@ import java.nio.channels.FileChannel;
  */
 public class BufferTest1 {
 
-    private static final String TO = "F:\\test\\异界BD中字.mp4";
+    private static final String TO = "D:\\异界BD中字.mp4";
     private static final int _100Mb = 1024 * 1024 * 100;
 
     public static void main(String[] args) {
         long sum = 0;
-        String src = "F:\\test\\异界BD中字.mp4";
+        String src = "D:\\异界BD中字.mp4";
         for (int i = 0; i < 3; i++) {
-            String dest = "F:\\test\\异界BD中字_" + i + ".mp4";
-//            sum += io(src,dest);//54606
-            sum += directBuffer(src,dest);//50244
+            String dest = "D:\\异界BD中字_" + i + ".mp4";
+            sum += io(src,dest);//455
+           // sum += directBuffer(src,dest);//194
         }
 
         System.out.println("总花费的时间为：" + sum );

@@ -5,15 +5,15 @@ package com.atguigu.java;
  * @author shkstart
  * @create 2020 下午 9:08
  *
- *  默认情况下：count : 11420
- *  设置栈的大小： -Xss256k : count : 2465
+ *  默认情况下：count : 11414
+ *  设置栈的大小： -Xss256k : count : 2469
  */
 public class StackErrorTest {
-    private static int count = 1;
-    public static void main(String[] args) {
-        System.out.println(count);
-        count++;
-        main(args);
-    }
+        private static int count = 1;
+        public static void main(String[] args) {
+            System.out.println(count);
+            count++;
+            main(args);
+        }
 
 }

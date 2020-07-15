@@ -21,9 +21,9 @@ package com.atguigu.java;
 public class HeapSpaceInitial {
     public static void main(String[] args) {
 
-        //返回Java虚拟机中的堆内存总量
+        //返回Java虚拟机中的堆内存总量  M
         long initialMemory = Runtime.getRuntime().totalMemory() / 1024 / 1024;
-        //返回Java虚拟机试图使用的最大堆内存量
+        //返回Java虚拟机试图使用的最大堆内存量 M
         long maxMemory = Runtime.getRuntime().maxMemory() / 1024 / 1024;
 
         System.out.println("-Xms : " + initialMemory + "M");
@@ -32,10 +32,10 @@ public class HeapSpaceInitial {
 //        System.out.println("系统内存大小为：" + initialMemory * 64.0 / 1024 + "G");
 //        System.out.println("系统内存大小为：" + maxMemory * 4.0 / 1024 + "G");
 
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 }

@@ -7,6 +7,7 @@ package java.lang;
 public class ShkStart {
 
     public static void main(String[] args) {
+        //java.lang.SecurityException: Prohibited package name: java.lang
         System.out.println("hello!");
     }
 }

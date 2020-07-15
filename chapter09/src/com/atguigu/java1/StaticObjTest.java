@@ -2,7 +2,7 @@ package com.atguigu.java1;
 
 /**
  * 《深入理解Java虚拟机》中的案例：
- * staticObj、instanceObj、localObj存放在哪里？
+ * staticObj、instanceObj、localObj存放在哪里？堆
  * @author shkstart  shkstart@126.com
  * @create 2020  11:39
  */

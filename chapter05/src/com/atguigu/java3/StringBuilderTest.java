@@ -33,6 +33,7 @@ public class StringBuilderTest {
         StringBuilder s1 = new StringBuilder();
         s1.append("a");
         s1.append("b");
+        //比上面s1多了个return 就可能被其他线程共享
         return s1;
     }
     //s1的操作：是线程安全的
@@ -40,6 +41,14 @@ public class StringBuilderTest {
         StringBuilder s1 = new StringBuilder();
         s1.append("a");
         s1.append("b");
+        //s1调用了toString方法，相对于上面方法三，s1在方法内销亡了
+        /**
+         * 因为：public String toString() {
+         *         // Create a copy, don't share the array
+         *         return new String(value, 0, count);
+         *     }
+         */
+        //可能s1.toString()是不安全的，但是s1是安全的
         return s1.toString();
     }
 

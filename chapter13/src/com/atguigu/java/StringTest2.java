@@ -6,6 +6,7 @@ import java.io.IOException;
 
 /**
  *  -XX:StringTableSize=1009
+ *  jinfo -flag StringTableSize PID 查看
  * @author shkstart  shkstart@126.com
  * @create 2020  23:53
  */

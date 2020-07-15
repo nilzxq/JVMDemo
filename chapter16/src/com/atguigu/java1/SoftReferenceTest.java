@@ -43,7 +43,7 @@ public class SoftReferenceTest {
 //
         try {
             //让系统认为内存资源紧张、不够
-//            byte[] b = new byte[1024 * 1024 * 7];
+           //byte[] b = new byte[1024 * 1024 * 7];//-Xms10m -Xmx10m
             byte[] b = new byte[1024 * 7168 - 635 * 1024];
         } catch (Throwable e) {
             e.printStackTrace();

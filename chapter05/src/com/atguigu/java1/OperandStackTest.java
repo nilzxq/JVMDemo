@@ -11,7 +11,7 @@ public class OperandStackTest {
         int j = 8;
         int k = i + j;
 
-       // int m = 800;
+        int m = 800;
 
     }
 

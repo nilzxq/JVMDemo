@@ -2,7 +2,7 @@ package com.atguigu.java;
 
 /**
  * -Xms10m -Xmx10m
- *
+ *-Xms10m -Xmx10m -XX:+PrintGCDetails
  * @author shkstart  shkstart@126.com
  * @create 2020  16:41
  */

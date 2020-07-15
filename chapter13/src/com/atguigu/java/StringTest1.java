@@ -17,7 +17,7 @@ public class StringTest1 {
 
         System.out.println(s1 == s2);//判断地址：true  --> false
 
-        System.out.println(s1);//
+        System.out.println(s1);//hello
         System.out.println(s2);//abc
 
     }
